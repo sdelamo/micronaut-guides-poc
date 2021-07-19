@@ -108,7 +108,6 @@ class GuideAsciidocGenerator {
             text = text.replace("@authors@", metadata.authors.join(', '))
             text = text.replace("@languageextension@", guidesOption.language.extension)
             text = text.replace("@testsuffix@", guidesOption.testFramework == TestFramework.SPOCK ? 'Spec' : 'Test')
-
             text = text.replace("@sourceDir@", projectName)
             text = text.replace("@api@", 'https://docs.micronaut.io/latest/api')
 
